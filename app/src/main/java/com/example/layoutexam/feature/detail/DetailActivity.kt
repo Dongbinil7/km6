@@ -60,7 +60,7 @@ class DetailActivity : AppCompatActivity() {
             val finalPrice: Double = qty * amount
             binding.layoutBottomDetail.tvCounter.text = qty.toString()
             binding.layoutBottomDetail.btnAddToCart.text = finalPrice.toIndonesianFormat()
-            "Tambah ke Keranjang - ${finalPrice.toIndonesianFormat()}".also {
+            "add - ${finalPrice.toIndonesianFormat()}".also {
                 binding.layoutBottomDetail.btnAddToCart.text = it
             }
         }
@@ -71,7 +71,7 @@ class DetailActivity : AppCompatActivity() {
                 binding.layoutBottomDetail.tvCounter.text = qty.toString()
                 val finalPrice: Double = qty * amount
                 binding.layoutBottomDetail.tvCounter.text = qty.toString()
-                "Tambah ke Keranjang - ${finalPrice.toIndonesianFormat()}".also {
+                "add - ${finalPrice.toIndonesianFormat()}".also {
                     binding.layoutBottomDetail.btnAddToCart.text = it
                 }
             }
